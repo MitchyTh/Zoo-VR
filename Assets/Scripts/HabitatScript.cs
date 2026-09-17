@@ -26,7 +26,7 @@ public class HabitatScript : MonoBehaviour
 
     void Start()
     {
-        animal = GetComponent<Animal>();
+     //   animal = GetComponent<Animal>();
     }
     void Update()
     {
