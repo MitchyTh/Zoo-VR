@@ -1,42 +1,63 @@
+using JetBrains.Annotations;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
+using System;
 public class HabitatScript : MonoBehaviour
 {
-    public GameObject animal;
+    [SerializeField] private Animal animal;
 
     public string animalName;
-    private int minWelfare = 0;
-    private int maxWelfare = 1;
-    private int minShelterScore = 0;
-    private int maxShelterScore = 1;
-    private int minFoodScore = 0;
-    private int maxFoodScore = 1;
-    private int minWaterScore = 0;
-    private int maxWaterScore = 1;
-    private int minCleanScore = 0;
-    private int maxCleanScore = 1;
 
-    public int shelterScore;
-    public int foodScore;
-    public int waterScore;
-    public int tempScore;
-    public int cleanScore;
+    //CHANGE WHEN CHANGING NUMBER OF DIFFERENT HABITAT MODIFICATIONS
+    public float numOfValues;
+
+    private float minWelfare = 0;
+    private float maxWelfare = 1;
+    private float minShelterScore = 0;
+    private float maxShelterScore = 1;
+    private float minFoodScore = 0;
+    private float maxFoodScore = 1;
+    private float minWaterScore = 0;
+    private float maxWaterScore = 1;
+    private float minCleanScore = 0;
+    private float maxCleanScore = 1;
+
+    //Score of each facet calculated with the values
+    public float shelterScore;
+    public float foodScore;
+    public float waterScore;
+    public float tempScore;
+    public float cleanScore;
+
+    //Real Habitat Values
+    private float shelterValue;
+    private float foodValue;
+    private float waterValue;
+    private float tempValue;
+    private float cleanValue;
 
     void Start()
     {
-     //   animal = GetComponent<Animal>();
+        animal = GetComponent<Animal>();
     }
     void Update()
     {
-        // Update the welfare scores based on the animal's needs
-        shelterScore = Mathf.Clamp(shelterScore, minShelterScore, maxShelterScore);
-        foodScore = Mathf.Clamp(foodScore, minFoodScore, maxFoodScore);
-        waterScore = Mathf.Clamp(waterScore, minWaterScore, maxWaterScore);
-        cleanScore = Mathf.Clamp(cleanScore, minCleanScore, maxCleanScore);
+        shelterScore =  CalculateScore(Math.Abs(shelterValue - animal.idealShelterValue));
+        foodScore = CalculateScore(Math.Abs(foodValue - animal.idealFoodValue));
+        waterScore = CalculateScore(Math.Abs(waterValue - animal.idealWaterValue));
+        cleanScore = CalculateScore(Math.Abs(cleanValue - animal.idealCleanValue));
+        tempScore = CalculateScore(Math.Abs(tempValue - animal.idealTempValue));
         // Calculate the overall welfare score
-        int welfareScore = shelterScore + foodScore + waterScore + cleanScore;
+        float welfareScore = shelterScore + foodScore + waterScore + cleanScore;
         // Update the animal's welfare score
     }
+
+    public float CalculateScore(float valueDifference)
+    {
+        return 1 - (valueDifference / 9); //9 is the largest difference between habitat values assuming that the lowest is 1 and highest is 10
+    }
+
 }

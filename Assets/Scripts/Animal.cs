@@ -13,6 +13,13 @@ public class Animal : MonoBehaviour
     [SerializeField] private float moveIntervalVar = 1f;
     [SerializeField] private float wanderRadius = 10f;
 
+    //Welfare values
+    public int idealFoodValue;
+    public int idealWaterValue;
+    public int idealShelterValue;
+    public int idealCleanValue;
+    public int idealTempValue;
+
     private float moveTimer = 0f;
 
     public void SetSpeed(float newSpeed)
