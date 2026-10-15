@@ -1,63 +1,55 @@
-using JetBrains.Annotations;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
-using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
 using System;
+using UnityEngine.UI;
+
 public class HabitatScript : MonoBehaviour
 {
-    [SerializeField] private Animal animal;
+    [Range(0f, 1f)] [SerializeField] private float idealShelter;
+    [Range(0f, 1f)] [SerializeField] private float idealWater;
+    [Range(0f, 1f)] [SerializeField] private float idealFoliage;
+    [Range(0f, 1f)] [SerializeField] private float idealTemp;
+    [Range(0f, 1f)] [SerializeField] private float idealEnrichment;
 
-    public string animalName;
+    [SerializeField] private Slider shelterSlider;
+    [SerializeField] private Slider waterSlider;
+    [SerializeField] private Slider foliageSlider;
+    [SerializeField] private Slider tempSlider;
+    [SerializeField] private Slider enrichmentSlider;
 
-    //CHANGE WHEN CHANGING NUMBER OF DIFFERENT HABITAT MODIFICATIONS
-    public float numOfValues;
-
-    private float minWelfare = 0;
-    private float maxWelfare = 1;
-    private float minShelterScore = 0;
-    private float maxShelterScore = 1;
-    private float minFoodScore = 0;
-    private float maxFoodScore = 1;
-    private float minWaterScore = 0;
-    private float maxWaterScore = 1;
-    private float minCleanScore = 0;
-    private float maxCleanScore = 1;
-
-    //Score of each facet calculated with the values
-    public float shelterScore;
-    public float foodScore;
-    public float waterScore;
-    public float tempScore;
-    public float cleanScore;
-
-    //Real Habitat Values
+    // Real Habitat Values
     private float shelterValue;
-    private float foodValue;
     private float waterValue;
+    private float foliageValue;
     private float tempValue;
-    private float cleanValue;
+    private float enrichmentValue;
 
-    void Start()
+    private float welfareScore;  // Overall welfare score (lower is better right now)
+
+    private void UpdateSliderValues()
     {
-        animal = GetComponent<Animal>();
-    }
-    void Update()
-    {
-        shelterScore =  CalculateScore(Math.Abs(shelterValue - animal.idealShelterValue));
-        foodScore = CalculateScore(Math.Abs(foodValue - animal.idealFoodValue));
-        waterScore = CalculateScore(Math.Abs(waterValue - animal.idealWaterValue));
-        cleanScore = CalculateScore(Math.Abs(cleanValue - animal.idealCleanValue));
-        tempScore = CalculateScore(Math.Abs(tempValue - animal.idealTempValue));
-        // Calculate the overall welfare score
-        float welfareScore = shelterScore + foodScore + waterScore + cleanScore;
-        // Update the animal's welfare score
+        shelterValue = shelterSlider.value;
+        waterValue = waterSlider.value;
+        foliageValue = foliageSlider.value;
+        tempValue = tempSlider.value;
+        enrichmentValue = enrichmentSlider.value;
     }
 
-    public float CalculateScore(float valueDifference)
+    public void RecalculateScore()
     {
-        return 1 - (valueDifference / 9); //9 is the largest difference between habitat values assuming that the lowest is 1 and highest is 10
+        UpdateSliderValues();
+
+        float shelterScore = Math.Abs(shelterValue - idealShelter);
+        float foodScore = Math.Abs(foliageValue - idealFoliage);
+        float waterScore = Math.Abs(waterValue - idealWater);
+        float tempScore = Math.Abs(tempValue - idealTemp);
+        float cleanScore = Math.Abs(enrichmentValue - idealEnrichment);
+
+        welfareScore = shelterScore + foodScore + waterScore + tempScore + cleanScore;
     }
 
+    private void FixedUpdate()
+    {
+        // This is unnecessary to do every tick, but probably fine
+        RecalculateScore();
+    }
 }
