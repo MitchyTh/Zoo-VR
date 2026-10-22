@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b41a69d4d41182a41beb5a8ea08109f4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257881
+  packageName: TDG Italian Ice Cart
+  packageVersion: 1.0
+  assetPath: Assets/TDG Italian Ice/Materials/Cardboard.mat
+  uploadId: 603010

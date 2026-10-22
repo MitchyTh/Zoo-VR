@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e0e3041c4ce36d04da463a3fe87507aa
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257881
+  packageName: TDG Italian Ice Cart
+  packageVersion: 1.0
+  assetPath: Assets/TDG Italian Ice/Materials/Chocolate Ice.mat
+  uploadId: 603010
