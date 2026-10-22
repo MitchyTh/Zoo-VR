@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c37792ef4e38fe4fb7b745a3895133c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 294674
+  packageName: Corkboard & Desk
+  packageVersion: 1.0
+  assetPath: Assets/Corkboard_Desk/Model/Materials/Corkboard&Desk_DefaultMaterial_AlbedoTransparency.mat
+  uploadId: 690574
