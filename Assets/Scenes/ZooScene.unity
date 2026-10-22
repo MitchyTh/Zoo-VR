@@ -3393,6 +3393,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8036764135751036468, guid: 2e4fc7b3c08a98c4caeca5314a90f3fc, type: 3}
   m_PrefabInstance: {fileID: 634115497}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &656238498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 656238500}
+  - component: {fileID: 656238499}
+  m_Layer: 0
+  m_Name: ShelterVisualController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &656238499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656238498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b23178c5d6a5c746af84cdc64c5e8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lowState: {fileID: 0}
+  mediumState: {fileID: 0}
+  highState: {fileID: 0}
+--- !u!4 &656238500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656238498}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1881482692}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685536274
 GameObject:
   m_ObjectHideFlags: 0
@@ -10040,7 +10087,19 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 656238499}
+        m_TargetAssemblyTypeName: VisualController, Assembly-CSharp
+        m_MethodName: SetVisualState
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1757014621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5fce755a6e9f7634881a900360703cf2, type: 3}
@@ -10944,6 +11003,7 @@ Transform:
   - {fileID: 1014024004}
   - {fileID: 1613815305}
   - {fileID: 840885843}
+  - {fileID: 656238500}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1881482693
