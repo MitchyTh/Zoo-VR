@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 837b7a468446c644b890b8efae8cbfe5
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bamboo_LOD
+    second: {fileID: 2100000, guid: ebc21b806f9804341bdaaf87495a41c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bamboo_leaves
+    second: {fileID: 2100000, guid: a524105c3943a6b44a9872bfbd4cc4f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bamboo_wood
+    second: {fileID: 2100000, guid: d834462c2ea4ed349981e724d589ab37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CherryBlossom_LOD
+    second: {fileID: 2100000, guid: ee1af285e17b0664380b6b597716c672, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CherryBlossom_leaves
+    second: {fileID: 2100000, guid: 6877174231e92f04887c23acaf2f62aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CherryBlossom_wood
+    second: {fileID: 2100000, guid: 3cc13a51f3647744487ad582abfab416, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DawnRedwood_LOD
+    second: {fileID: 2100000, guid: 5c4c3e7e5b9cf3c408f2a607ef4d87dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DawnRedwood_leaves
+    second: {fileID: 2100000, guid: 061a9ca5f5ebbfb42ab459ba67658d92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DawnRedwood_wood
+    second: {fileID: 2100000, guid: 356c0b99bf23b944bbadb63df188015f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Decayed_wood
+    second: {fileID: 2100000, guid: a46280739dc987845b536daacf9bd481, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FallenLeaves
+    second: {fileID: 2100000, guid: fb39e043136a3144f86f356fb714f46f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ginkgo_LOD
+    second: {fileID: 2100000, guid: 3372a54c80a0ba54eaf4e5840990c655, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ginkgo_leaves
+    second: {fileID: 2100000, guid: 7b18c517107efbd4bb33fb0ed49bc232, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ginkgo_wood
+    second: {fileID: 2100000, guid: 565904ed924414844aa970c753fc8368, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JapaneseCedar_LOD
+    second: {fileID: 2100000, guid: d6b68b098891d1645a9483fd91c0b01f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JapaneseCedar_leaves
+    second: {fileID: 2100000, guid: a829f59a9a9a8d54193ca848fce443a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JapaneseCedar_wood
+    second: {fileID: 2100000, guid: 437a339a62e25d748a5ae1932a88e7f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JapaneseCypress_LOD
+    second: {fileID: 2100000, guid: 7ea703a308be84a47934657b552626c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JapaneseCypress_leaves
+    second: {fileID: 2100000, guid: 914171731c3a84e47b2f12650d4c7b70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JapaneseCypress_wood
+    second: {fileID: 2100000, guid: 81759389e6e762444a72164f34df2c8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JapaneseEurya
+    second: {fileID: 2100000, guid: 1991a0443db76a440878a837b1583a03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JapaneseLaurel
+    second: {fileID: 2100000, guid: 911cb23ab05d025469dab312791f108e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mugwort
+    second: {fileID: 2100000, guid: 0fbac7f3202492441aa895bb29ed7c64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pine_LOD
+    second: {fileID: 2100000, guid: c64e21cbfda9e5e41bfb6726893edd6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pine_leaves
+    second: {fileID: 2100000, guid: 5ef6ad91d2662f640b4b0d6857d05630, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pine_wood
+    second: {fileID: 2100000, guid: 709024dad4db6eb4991b918fcfe8150a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlaneTree_LOD
+    second: {fileID: 2100000, guid: dd36546ab30fb7648bf9e7fab1a8602e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlaneTree_leaves
+    second: {fileID: 2100000, guid: 4396f166e5fd0c5478c6eeaf400be4d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlaneTree_wood
+    second: {fileID: 2100000, guid: 5bdb26d8ce95fe4419f20f3a5b86ce2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SawtoothOak_LOD
+    second: {fileID: 2100000, guid: d88a6a376d6b560428159f42dc4de602, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SawtoothOak_leaves
+    second: {fileID: 2100000, guid: 61bc1c03929d1b548aa34733512c6510, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SawtoothOak_wood
+    second: {fileID: 2100000, guid: 09e74c05a7407394eb56ea5f22d41d59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ViolaGrypoceras
+    second: {fileID: 2100000, guid: 06358a1bd7630df448d4ddbba3b24e8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock
+    second: {fileID: 2100000, guid: 3a0bfa4f4fe3d0d4ea6ce6e157d4162a, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 381800
+  packageName: Essential Nature Pack
+  packageVersion: 1.0
+  assetPath: Assets/Polyeler/EssentialNaturePack/Meshes/Nature.fbx
+  uploadId: 920896
