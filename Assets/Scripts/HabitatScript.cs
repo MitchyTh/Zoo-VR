@@ -52,4 +52,9 @@ public class HabitatScript : MonoBehaviour
         // This is unnecessary to do every tick, but probably fine
         RecalculateScore();
     }
+
+    public float getWelfareScore()
+    {
+        return welfareScore;
+    }
 }
