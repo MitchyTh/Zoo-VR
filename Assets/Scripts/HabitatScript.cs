@@ -31,7 +31,6 @@ public class HabitatScript : MonoBehaviour
         waterValue = waterSlider.value;
         foliageValue = foliageSlider.value;
         tempValue = tempSlider.value;
-        enrichmentValue = enrichmentSlider.value;
     }
 
     public void RecalculateScore()
