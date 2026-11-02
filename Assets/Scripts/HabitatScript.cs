@@ -14,7 +14,6 @@ public class HabitatScript : MonoBehaviour
     [SerializeField] private Slider waterSlider;
     [SerializeField] private Slider foliageSlider;
     [SerializeField] private Slider tempSlider;
-    [SerializeField] private Slider enrichmentSlider;
 
     // Real Habitat Values
     private float shelterValue;
@@ -44,6 +43,11 @@ public class HabitatScript : MonoBehaviour
         float cleanScore = Math.Abs(enrichmentValue - idealEnrichment);
 
         welfareScore = shelterScore + foodScore + waterScore + tempScore + cleanScore;
+    }
+
+    public void setEnrichmentValue(float value)
+    {
+        enrichmentValue = value;
     }
 
     private void FixedUpdate()

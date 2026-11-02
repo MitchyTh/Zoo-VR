@@ -628,7 +628,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8740639308389851209, guid: a1e392261ad1bde4db809bcc52261d9b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e392261ad1bde4db809bcc52261d9b, type: 3}
@@ -2262,7 +2263,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8740639308389851209, guid: a1e392261ad1bde4db809bcc52261d9b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e392261ad1bde4db809bcc52261d9b, type: 3}
@@ -16837,12 +16839,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 320713493}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+        m_TargetAssemblyTypeName: HabitatPanelSwapper, Assembly-CSharp
+        m_MethodName: SliderToEnrichment
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -17901,7 +17903,6 @@ MonoBehaviour:
   waterSlider: {fileID: 428184607}
   foliageSlider: {fileID: 1682827629}
   tempSlider: {fileID: 1187509241}
-  enrichmentSlider: {fileID: 0}
 --- !u!1001 &1892314137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19986,7 +19987,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8740639308389851209, guid: a1e392261ad1bde4db809bcc52261d9b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1e392261ad1bde4db809bcc52261d9b, type: 3}
