@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 94825d1641051ef4a845749f51df9552
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257881
+  packageName: TDG Italian Ice Cart
+  packageVersion: 1.0
+  assetPath: Assets/TDG Italian Ice/Screenshot.cs
+  uploadId: 603010

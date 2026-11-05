@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d39a2553983f47a46894cf8031227817
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 320411
+  packageName: Park Furniture
+  packageVersion: 1.0
+  assetPath: Assets/LoafbrrAssets/ParkFurniture/materials/ParkFurniture_Mat.mat
+  uploadId: 758834
