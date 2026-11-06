@@ -1,6 +1,8 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -19,6 +21,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialogueCanvas;
     [SerializeField] private TextMeshProUGUI dialogueTitleLabel;
     [SerializeField] private TextMeshProUGUI dialogueTextLabel;
+    [SerializeField] private InteractBubble nextBubble;
+
+    [SerializeField] private UnityEvent onFinish;
 
     private List<string> dialoguePages;
     private string currentPage;
@@ -30,7 +35,9 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
-        dialoguePages = new List<string>(dialogueText.Split("___"));
+        dialoguePages = dialogueText.Split("___")
+                                    .Select(s => s.Trim())
+                                    .ToList();
         dialogueTitleLabel.text = dialogueTitle;
         textDelay = 1f / Mathf.Max(textSpeed, 0.01f);
     }
@@ -47,7 +54,7 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueCanvas.SetActive(false);
             currentPageIndex = 0;
-            currentStringIndex = 0;
+            onFinish.Invoke();
             return;
         }
 
@@ -57,6 +64,9 @@ public class DialogueManager : MonoBehaviour
             dialogueCanvas.SetActive(true);
         }
 
+        dialogueTextLabel.text = "";
+        currentStringIndex = 0;
+        textTimer = 0;
         currentPage = dialoguePages[currentPageIndex];
         currentPageIndex++;
     }
@@ -84,5 +94,10 @@ public class DialogueManager : MonoBehaviour
         }
 
         textTimer -= charsToShow * textDelay;
+
+        if (currentStringIndex >= currentPage.Length)
+        {
+            nextBubble.Respawn();
+        }
     }
 }
