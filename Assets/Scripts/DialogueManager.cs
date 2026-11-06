@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -22,7 +21,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject dialogueCanvas;
     [SerializeField] private TextMeshProUGUI dialogueTitleLabel;
     [SerializeField] private TextMeshProUGUI dialogueTextLabel;
-    [SerializeField] private GameObject nextBubbleObject;
+    [SerializeField] private InteractBubble nextBubble;
 
     [SerializeField] private UnityEvent onFinish;
 
@@ -70,9 +69,6 @@ public class DialogueManager : MonoBehaviour
         textTimer = 0;
         currentPage = dialoguePages[currentPageIndex];
         currentPageIndex++;
-
-        // Hide "Next" bubble
-        nextBubbleObject.SetActive(false);
     }
 
     private void UpdateText()
@@ -101,7 +97,7 @@ public class DialogueManager : MonoBehaviour
 
         if (currentStringIndex >= currentPage.Length)
         {
-            nextBubbleObject.SetActive(true);
+            nextBubble.Respawn();
         }
     }
 }
